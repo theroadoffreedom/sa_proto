@@ -1,0 +1,24 @@
+﻿syntax = "proto3";
+
+package common;
+
+enum DBPrivilege {
+    PRVG_ = 0;
+    PRVG_ALL = 0x1;                 // all
+    PRVG_SELECT = 0x2;              // select
+    PRVG_INSERT = 0x4;              // insert
+    PRVG_UPDATE = 0x8;              // update
+    PRVG_DELETE = 0x10;             // delete
+    PRVG_CREATE = 0x20;             // create
+    PRVG_DROP = 0x40;               // drop
+}
+
+
+
+enum RetCode {
+    // master code [10000,20000)
+    SUCCESS = 0;                        // 成功
+    INTERNAL_ERROR = 10000;             // 内部错误通用码
+    PARAMS_ERROR = 10001;               // 参数错误通用码
+}
+

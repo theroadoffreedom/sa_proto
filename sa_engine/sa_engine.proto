@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package sa_engine;
+
+//import "common.proto";
+
+service SaEngine{
+		
+}
